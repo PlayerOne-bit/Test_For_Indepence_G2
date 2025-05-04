@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=!, initial-scale=1.0">
+    <title>Test for Independence Group 2</title>
+    <link rel="icon" href="LogoP1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mathematics in the Modern World</h1>
+        <p><u>BSIT102D : GROUP 2 PRESENTS</u></p>
+    </header>
+    <section>
+        <h2><u>Test for Independece</u></h2>
+        <h4>Scenario:</h6>
+        <p>The Wakai IT Tech Company conducted a survey among 200 of its technical employees to analyze the distribution of programming language preference among two roles: Software Engineers and Software Developers. The goal was to determine whether job roles influence language preference. The programming languages considered were C#, Java, Python, and JavaScript.</p>
+
+        <p>Each employee was asked to indicate their most proficient or preferred programming language. The responses were then categorized by job title and language. The summarized results are shown in the table.</p>
+            
+        <p>The company wishes to test whether there is a statistically significant relationship between an employee’s role and their preferred programming language, using a chi-square test of independence with a significance level of 0.05.</p>
+        
+    
+        <div>
+            <table>
+                <tr>
+                    <th>Group</th>
+                    <th>Software Engineer</th>
+                    <th>Software Developer</th>
+                    <th>Total</th>
+                </tr>
+                <tr>
+                    <th>C#</th>
+                    <td>10</td>
+                    <td>15</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <th>Java</th>
+                    <td>20</td>
+                    <td>30</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <th>Python</th>
+                    <td>40</td>
+                    <td>35</td>
+                    <td>75</td>
+                </tr>
+                <tr>
+                    <th>Javascript</th>
+                    <td>30</td>
+                    <td>20</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <th>Total</th>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>200</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section>
+        <ol type="a">
+            <li>Null Hypothesis: The preference of programming language and software profession are independent.</li>
+            <li>Alternative Hypothesis: There is enough evidence to reject the null hypothesis.</li>
+                The preference of programming language and software profession are dependent.</li>
+            <li>a = 0.05</li>
+            <li>Degrees of freedom: (r-1)(c-1) = (4-1)(2-1) = 3</li>
+            <li>Calculate</li>
+                <p>x^2 = ∑(O-E)^2/E</p>
+                <div>
+                    <table>
+                        <tr>
+                            <th>Rows, Columns</th>
+                            <th>O</th>
+                            <th>E</th>
+                            <th>O-E</th>
+                            <th>(O-E)^2</th>
+                            <th>(O-E)^2/E</th>
+                        </tr>
+                        <tr>
+                            <td>1,1</td>
+                            <td>10</td>
+                            <td>12.5</td>
+                            <td>-2.5</td>
+                            <td>6.25</td>
+                            <td>0.5</td>
+                        </tr>
+                        <tr>
+                            <td>1,2</td>
+                            <td>15</td>
+                            <td>12.5</td>
+                            <td>2.5</td>
+                            <td>6.25</td>
+                            <td>0.5</td>
+                        </tr>
+                        <tr>
+                            <td>2,1</td>
+                            <td>20</td>
+                            <td>25</td>
+                            <td>-5</td>
+                            <td>25</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>2,2</td>
+                            <td>30</td>
+                            <td>25</td>
+                            <td>5</td>
+                            <td>25</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>3,1</td>
+                            <td>40</td>
+                            <td>37.5</td>
+                            <td>2.5</td>
+                            <td>6.25</td>
+                            <td>0.1667</td>
+                        </tr>
+                        <tr>
+                            <td>3,2</td>
+                            <td>35</td>
+                            <td>37.5</td>
+                            <td>-2.5</td>
+                            <td>6.25</td>
+                            <td>0.1667</td>
+                        </tr>
+                        <tr>
+                            <td>4,1</td>
+                            <td>30</td>
+                            <td>25</td>
+                            <td>5</td>
+                            <td>25</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>4,2</td>
+                            <td>20</td>
+                            <td>25</td>
+                            <td>-5</td>
+                            <td>25</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>x^2=</td>
+                            <td>5.5</td>
+                        </tr>
+                    </table>
+            </div>
+        </ol>
+    </section>
+
+    <section>
+        <p>Df: 3</p>
+        <p>Critical value: 7.81</p>
+        <p>x^2 = 5.5</p>
+        <p>Decision: Accept the null hypothesis</p>
+        <p>Interpretation: The preference of programming language and software profession are independent.</p>
+    </section>
+
+    <footer>
+        <div>
+            <p>Group 2 BSIT102D Members:</p>
+            <ul>
+                <li>Kyle Ethan Sy</li>
+                <li>Joven K. Claudio</li>
+                <li>Jude Peñalosa</li>
+                <li>Cian Rubit Bandelaria</li>
+                <li>Carl Aeron Araojo</li>
+                <li>Christine Lipio</li>
+            </ul>
+        </div>
+</body> 
+</html>
